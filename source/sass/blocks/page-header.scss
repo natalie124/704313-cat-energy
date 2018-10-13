@@ -1,7 +1,8 @@
 .page-header {
 	display: flex;
 	flex-direction: column;
-	width: 320px;
+	/*min-width: 320px;*/
+	width: 100%;
 
 	background-color: $white;
 }
@@ -30,7 +31,8 @@
 
 @media (max-width: $mobile-width-only) {
 	.page-header__logo-image {
-	    margin-left: 20px;	
+	    /*margin-left: 20px;*/
+	    margin-left: 6.25%;	
 	}
 }
 
