@@ -1,0 +1,44 @@
+.copyright__link {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 89.5%;
+	padding: 18px 4.25% 17px 6.25%;
+	text-decoration: none;
+	font-family: $arial;
+	font-size: 16px;
+	line-height: 1;
+	font-weight: normal;
+	color: $grey;
+}
+.copyright__logo {
+	width: 42px;
+	height: 42px;
+	fill: $grey;
+}
+.copyright__link:hover .copyright__logo,
+.copyright__link:focus .copyright__logo {
+	fill: $green;
+}
+.copyright__link:active {
+	opacity: 0.3;
+}
+.copyright__link:active .copyright__logo {
+	fill: $green;
+	opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+
+	.copyright__link {
+		width: 173px;
+		height: 34px;
+		padding: 0 11.5% 0 0;
+	}
+}
+@media (min-width: $desktop-width) {
+	.copyright__link {
+		padding: 3px 37% 0 0;
+	}
+}

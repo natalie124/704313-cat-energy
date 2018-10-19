@@ -1,0 +1,155 @@
+.intro {
+	width: 100%;
+	
+	font-family: $oswald;
+	line-height: 1;
+	
+	text-align: center;
+}
+
+.intro__wrapper {
+	position: relative;
+	z-index: 3;
+
+	height: 305px;
+	margin-bottom: 134px;
+	
+	color: $white;
+	background-color: $green;
+	background-image: url(../../img/index-background-mobile@1x.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	&::after {
+		content:"";
+
+		position: absolute;
+		top: 166px;
+		right: 6.25%;
+		z-index: 3;
+
+		width: 87.5%;
+		height: 270px;
+
+		background-image: url(../../img/index-can-mobile@1x.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}	
+}
+
+.intro__title {
+	margin: 0;
+	padding: 27px 9.375% 24px;
+
+	font-size: 36px;
+	font-weight: 400;
+}
+
+.intro__text {
+	margin: 0;
+	padding: 0;
+
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.intro__link {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 11px 73px;
+	margin-bottom: 22px;
+
+	font-family: $oswald;
+	font-size: 14px;
+	line-height: 1.29;
+	font-weight: normal;
+	color: $white;
+	text-transform: uppercase;
+
+	list-style: none;
+	text-decoration: none;
+	background-color: $green;
+
+	&:hover,
+	&:focus {
+		background-color: #5eaa2f;
+	}
+
+	&:active {
+		color: rgba(255, 255, 255, 0.3);
+		background-color: #5eaa2f;
+	}
+}
+@media (min-width: $tablet-width) {
+	.intro {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		min-width: 722px;
+		width: 100%
+	}
+	.intro__wrapper {
+		width: 500px;
+		margin: 0 0 0 15.63%;
+		color: $black;
+
+		background-color: $white;
+		background-image: none;
+		&::after {
+			z-index: 0;
+			top: 233px;
+			left: -18.15%;
+			width: 709px;
+			height: 609px;
+			background-image: url(../../img/index-can-tablet@1x.jpg);
+		}
+	}
+	.intro__title {
+		margin: 0;
+		padding: 32px 0 41px 0;
+		text-align: left;
+		font-size: 60px;
+	}
+	.intro__text {
+		font-size: 20px;
+		text-align: left;
+	}
+	.intro__link {
+		position: relative;
+		z-index: 3;
+		margin: -44px 0 529px 15.63%;
+		padding: 13px 27px;
+		font-size: 20px;
+	}
+}
+@media (min-width: $desktop-width) {
+	.intro__wrapper {
+		width: 50%;
+		max-width: 720px;
+		margin: 0;
+		padding: 25px 0 0 0;
+
+		&::after {
+			z-index: 1;
+			top: -25px;
+			left: 78%;
+			width: 550px;
+			height: 500px;
+			background-image: url(../../img/index-can-desktop@1x.png);
+		}
+	}
+	.intro__title {
+		width: 500px;
+		margin-left: 26.8%;
+	}
+	.intro__text {
+		width: 500px;
+		padding-bottom: 3px;
+		margin-left: 26.8%;
+	}
+	.intro__link {
+		margin: -40px 0 269px 13.2%;
+	}
+}
