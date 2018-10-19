@@ -3,26 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи: каталог</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link type="text/css" href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
-        <img src="#" alt="Логотип" class="page-header__logo-image">
+        <img src="img/logo-mobile.svg" alt="Логотип" class="page-header__logo-image" width="191" height="38">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list nav-list">
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="index.html">Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Каталог продукции</a>
+          <li class="main-nav__item main-nav__link--current">
+            <a class="main-nav__link" href="#">Каталог продукции</a>
           </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="form.html">Подбор программы</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -33,23 +35,27 @@
         <h2 class="visually-hidden">Основные товары</h2>
         <ul class="catalog__list">
           <li class="catalog__item catalog-item">
-            <img src="http://placehold.it/150x100" alt="" class="catalog__image catalog__image--item-1">
-            <h3 class="catalog-item__title">Cat Energy PRO 500 г</h3>
-            <table class="catalog-item__table catalog-table">
-              <tr class="catalog-table__item">
-                <td>Объем</td>
-                <td>500 г</td>
+            <a href="#" class="catalog__link">
+               <img src="img/chicken-small-mobile@1x.jpg" alt="" class="catalog__image catalog__image--item-1">
+            </a>
+            <div class="catalog__info-wrapper">
+               <h3 class="catalog-item__title">Cat Energy PRO 500 г</h3>
+            <table class="catalog-item__table">
+              <tr class="catalog__table-item">
+                <td class="catalog__table-title">Объем</td>
+                <td class="catalog__table-text">500 г</td>
               </tr>
-              <tr class="catalog-table__item">
-                <td>Вкус</td>
-                <td>Курица</td>
+              <tr class="catalog__table-item">
+                <td class="catalog__table-title">Вкус</td>
+                <td class="catalog__table-text">Курица</td>
               </tr>
-              <tr class="catalog-table__item">
-                <td>Цена</td>
-                <td>700 р.</td>
+              <tr class="catalog__table-item">
+                <td class="catalog__table-title">Цена</td>
+                <td class="catalog__table-text">700 р.</td>
               </tr>
             </table>
-            <a href="#" class="catalog-item__link item-link">Заказать</a>
+            </div>
+            <a href="#" class="catalog__btn catalog-btn">Заказать</a>
           </li>
           <li class="catalog__item catalog-item">
             <img src="http://placehold.it/150x100" alt="" class="catalog__image catalog__image--item-2">
@@ -220,40 +226,47 @@
       </div>
     </main>
     <footer class="page-footer">
-      <section class="contacts">
-        <h2 class="visually-hidden">Как нас найти</h2>
-        <p class="contacts__cooperation">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f1ab43abac10a7af3c687ae8010f185c29dbcc25a800bc8b3e1da2666222ffb&amp;source=constructor" width="320" height="400" frameborder="0"></iframe>
+       <section class="page-footer__contacts contacts">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <div class="contacts__info">
+          <p class="contacts__cooperation">Приглашаем<br> к сотрудничеству дилеров!</p>
+          <p class="contacts__address">
+            <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="contacts__city">Санкт-Петербург</span>
+          </p>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f1ab43abac10a7af3c687ae8010f185c29dbcc25a800bc8b3e1da2666222ffb&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
       </section>
-      <a href="index.html" class="page-footer__logo-title logo-title">
-        <img src="#" alt="Cat Energy" class="page-footer__title-image title-image">
-      </a>
-      <ul class="page-footer__social-list">
-        <li class="page-footer__social-item">
-          <a href="https://vk.com/intensive_adaptive_15" class="page-footer__social-link">
-            <img class="page-footer__social-image page-footer__social-image--vk" src="#" alt="Вконтакте">
+      <div class="page-footer__logo-wrapper">
+        <a href="#" class="page-footer__logo">
+          <img src="img/logo-footer.svg" alt="Cat Energy" class="page-footer__logo-image" width="129" height="24px">
+        </a>
+      </div>
+      <ul class="page-footer__social-list social-list">
+        <li class="social-list__item">
+          <a href="https://vk.com/intensive_adaptive_15" class="social-list__link">
+             <svg class="social-list__icon social-list__icon--vk" width="22" height="12"><use xLink:href="#icon-vk"></use></svg>
           </a>
         </li>
-        <li class="page-footer__social-item">
-          <a href="https://www.instagram.com/htmlacademy" class="page-footer__social-link">
-            <img class="page-footer__social-image page-footer__social-image--instagram" src="#" alt="Instagram">
+        <li class="social-list__item">
+          <a href="https://www.instagram.com/htmlacademy" class="social-list__link">
+            <svg class="social-list__icon social-list__icon--insta" width="17" height="17"><use xLink:href="#icon-insta"></use></svg>
           </a>
         </li>
-        <li class="page-footer__social-item">
-          <a href="https://www.facebook.com/htmlacademy" class="page-footer__social-link page-footer__social-link--fb">
-            <img class="page-footer__social-image page-footer__social-image-fb" src="#" alt="Facebook">
+        <li class="social-list__item">
+          <a href="https://www.facebook.com/htmlacademy" class="social-list__link social-list__link--fb">
+             <svg class="social-list__icon social-list__icon--fb" width="10" height="19"><use xlink:href="#icon-fb"></use></svg>
           </a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__logo">
-          <img class="copuright_image" src="#" alt="HTML Academy">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+          <span class="copyright__text">HTML Academy</span>
+          <svg class="copyright__logo" width="60" height="60"><use xlink:href="#copyright-logo"></use></svg>
         </a>
-      </div>
-      
     </footer>
-
+    <script src="js/script.js"></script>
   </body>
 </html>

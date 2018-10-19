@@ -1,0 +1,234 @@
+.example {
+	width: 87.5%;
+	margin: 0 0 0 0;
+	padding: 17px 6.25% 2px;
+
+	font-weight: normal;
+
+	background-color: $lightgrey;
+	overflow: hidden;
+}
+
+.example__title {
+	margin: 0 0 0 0;
+	padding: 0 0 23px 0;
+
+	font-family: $oswald;
+	font-size: 36px;
+	line-height: 1.67;
+	color: $black;
+}
+
+.example__text {
+	margin: 0;
+	padding: 0 5% 24px 0;
+
+	font-family: $arial;
+	font-size: 14px;
+	line-height: 1.29;
+	color: $grey;
+}
+
+.example__table {
+	min-width: 280px;
+}
+
+.example__table tbody {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.example__table-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 85.4%;
+	padding: 0 7.3%;
+
+	background-color: transparent;
+}
+
+.example__title-item {
+	position: relative;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 34.3%;
+	margin: -10px 0 0 0;
+
+	font-family: $arial;
+	font-size: 12px;
+	line-height: 1;
+	color: $grey;
+	text-align: center;
+	text-transform: lowercase;
+
+	background-color: $lightgrey;
+}
+
+.example__table-text {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;	
+}
+
+.example__text-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-wrap: wrap;
+	padding: 15px 0;
+	width: 44%;
+
+	font-family: $oswald;
+	font-size: 24px;
+	line-height: 1;
+	color: $black;
+	text-transform: uppercase;	
+	
+	border: 1px solid #cdcdcd;
+	border-radius: 3px;
+}
+.example__price {
+	margin: 0 0 44px 0;
+	padding: 17px 0 0 48px;
+	font-family: $oswald;
+	font-size: 14px;
+	line-height: 1;
+	color: $black;
+	text-transform: uppercase;
+}
+@media (min-width: $tablet-width) {
+	.example {
+		background-color: $white;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	.example__title {
+		font-size: 60px;
+		line-height: 1;
+		padding: 12px 6.25% 64px 4%;
+	}
+	.example__info-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 100%;
+	}
+	.example__text {
+		padding: 0 6.25% 51px 4%;
+		font-size: 16px;
+		line-height: 1.5;
+	}
+	.example__table {
+		min-width: 366px;
+		padding-left: 4%;
+	}
+	.example__table-title {
+		width: 332px;
+		padding: 0 10px 50px 24px;
+	}
+	.example__title-item {
+	    margin: -10px 0 0 0;
+		font-size: 14px;
+		background-color: $white;
+		&--weight {
+			width: 114px;
+		}
+		&--time {
+			width: 142px;
+		}
+	}
+	.example__text-item {
+		font-size: 30px;
+		line-height: 1.23;
+		padding: 17px 0;
+	}
+	.example__price {
+		width: 25%;
+		font-size: 20px;
+		line-height: 1;
+		padding: 8px 4.25% 0 0;
+		margin: 0 0 0 0;
+		text-align: right;
+	}
+	.example__price-title {
+		display: inline-block;
+		padding: 5px 0 9px;
+	}
+}
+@media (min-width: $desktop-width) {
+	.example {
+		width: 100%;
+		padding: 0 0 0;
+		background-color: $lightgrey;
+		/*margin-top: 133px;
+		margin-bottom: -91px;*/
+		overflow: visible;
+	}
+	.example__title-wrapper {
+		width: 100%;
+		background-color: $white;
+		padding-bottom: 76px;
+		/*margin-top: -65px;*/
+	}
+	.example__title {
+		max-width: 1220px;
+		margin: 0 auto;
+		
+		padding: 0;
+		font-size: 60px;
+		background-color: $white;
+		
+	}
+
+	.example__content-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 100%;
+		max-width: 1300px;
+		margin: 0 auto;
+		padding: 0;
+		height: 458px;
+	}
+	
+	.example__info-wrapper {
+		width: 435px;
+		padding: 71px 0 0 40px;
+		background-color: $lightgrey;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.example__text {
+		padding: 0 0 66px;
+	}
+	.example__table {
+		padding: 0;
+	}
+	.example__title-item {
+		background-color: $lightgrey;
+	}
+	.example__price {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		min-width: 326px;
+		padding: 0;
+	}
+}
+

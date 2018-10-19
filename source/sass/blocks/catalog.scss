@@ -1,0 +1,15 @@
+.catalog {
+	width: 100%;
+	background-color: $white;
+}
+
+.catalog__title {
+	margin: 0;
+	padding: 14px 0 28px 6.25%;
+	font-family: $oswald;
+	font-size: 36px;
+	line-height: 1.67;
+	font-weight: normal;
+	color: $black;
+	border-bottom: 1px solid #ededed;
+}
