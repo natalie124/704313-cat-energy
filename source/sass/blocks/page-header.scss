@@ -58,8 +58,6 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;
-		min-height: 696px;
-		margin-bottom: 81px;
 
 		&--index::after {
 			content: "";
@@ -76,6 +74,10 @@
 			background-repeat: no-repeat;
 			background-position: right bottom;
 			background-size: 720px auto;
+		}
+		&--index {
+			min-height: 696px;
+			margin-bottom: 81px;
 		}
 	}
 	.page-header__wrapper {
