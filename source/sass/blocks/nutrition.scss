@@ -1,14 +1,14 @@
 .nutrition {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 
 	list-style: none;
 }
 
 .nutrition__item {
-	width: 81.375%;
+	width: 88%;
 	margin: 0 6% 20px;
-	padding: 0 0 0 6.625%;
+	padding: 0 0 0 6%;
 
 	font-weight: 400;
 
@@ -123,12 +123,17 @@
 }
 @media (min-width: $tablet-width) {
 	.nutrition {
-		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		width: 768px;
+		padding: 0 30px;
+		margin: 0 auto;
 	}
 	.nutrition__item {
-		width: 49%;
-		padding: 76px 36.5% 62px 7%;
-		margin:0 4% 30px;
+		width: 100%;
+		padding: 76px 280px 62px 52px;
+		margin:0 0 30px;
 	}
 	.nutrition__title {
 		margin: 0;
@@ -139,7 +144,7 @@
 			width: 200px;
 			height: 200px;
 			top: 16px;
-			left: 104.3%;
+			left: 105%;
 		}
 		&::after {
 			width: 268px;
@@ -176,31 +181,29 @@
 }
 @media (min-width: $desktop-width) {
 	.nutrition {
-		width: 1220px;
-		margin: 0 auto;
-		padding: 0;
-		display: flex;
 		justify-content: space-between;
-		align-items: flex-start;
+		width: 1300px;
+		padding: 0 40px;
+		
 	}
 	.nutrition__item {
 		margin: 0;
-		padding: 0;
+		padding: 0 20px 0 53px;
 		width: 570px;
 	}
 	.nutrition__title {
-		padding: 76px 0 75px 36.7%;
+		padding: 76px 0 73px 160px;
 
 		&::before {
-			top: 47px;
-			left: 9.12%;
+			top: 46px;
+			left: -1px;
 			width: 100px;
 			height: 100px;
 		}
 
 		&::after {
 			top: 41px;
-			left: 6%;
+			left: -19px;
 			width: 134px;
 			height: 97px;
 		}
@@ -215,13 +218,13 @@
 		}	
 	}
 	.nutrition__text {
-		padding: 0 4.04% 30px 9.12%;
+		padding-bottom: 30px;
 	}
 	.nutrition__link {
-		padding: 0 0 62px 9.12%;
+		padding-bottom: 63px;
 
 		&::after {
-			left: 180px;
+			left: 128	px;
 			top: 4px;
 		}
 	}

@@ -3,8 +3,8 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-start;
-	width: 42%;
-	margin: 0 6.25%;
+	width: 87.5%;
+	margin: 0 auto;
 	padding: 25px 22.75% 20px;
 	list-style: none;
 	background-color: transparent;
@@ -35,6 +35,7 @@
 	.social-list {
 		width: 133px;
 		padding: 0;
+		margin: 0;
 		border: none;
 	}
 	.social-list__item {
