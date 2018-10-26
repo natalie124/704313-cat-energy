@@ -28,25 +28,21 @@ body {
 	background-color: $white;
 }
 
-
-@media (min-width: $tablet-width) {
-	body {
-		min-width: 768px;
-	}
-}
-
-@media (min-width: $desktop-width) {
-	body {
-		min-width: 1200px;
-	}
-}
-
 img {
 	max-width: 100%;
 	height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -60,13 +56,4 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-.advantages {
-	width: 320px;
-}
-.example {
-	width: 320px;
-}
-.page-footer {
-	width: 320px;
 }

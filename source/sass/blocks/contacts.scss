@@ -1,22 +1,28 @@
 .contacts {
 	width: 100%;
-	background-color: $white;
+  
+	background-color: $lightgrey;
+
+	&--index {
+		background-color: $white;
+	}
 }
+
 .contacts__info {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	width: 87.5%;
-	padding: 28px 6.25% 26px;
+	width: 100%;
+	padding: 29px 6% 26px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	background-color: $white;
 }
 
 .contacts__cooperation {
-	width: 50%;
+	width: 45%;
+
 	margin: 0;
 	font-family: $oswald;
 	font-size: 16px;
@@ -33,24 +39,36 @@
 	line-height: 20px;
 	font-weight: normal;
 }
+
 .contacts__map {
-	width: 100%;
 	height: 360px;
 }
 
+.contacts__map iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
 @media (min-width: $tablet-width) {
+	.contacts {
+		width: 100%;
+	}
+  
 	.contacts__info {
-		width: 81.5%;
-		padding: 63px 9.25% 58px;
+		width: 768px;
+		padding: 64px 71px 58px;
+		margin: 0 auto;
 		display: flex;
 	}
+  
 	.contacts__cooperation {
 		width: 30%;
 		padding: 2px 0 0;
 		font-size: 20px;
 		line-height: 1.25;
-
 	}
+  
 	.contacts__address {
 		width: 30%;
 		padding: 0;
@@ -58,33 +76,57 @@
 		line-height: 1.25;
 		text-align: right;
 	}
+  
 	.contacts__street {
 		display: inline-block;
 		padding-bottom: 20px;
 	}
+  
 	.contacts__map {
 		height: 400px;
+		width: 100%;
 	}
 }
 
 @media (min-width: $desktop-width) {
-	.contacts__info {
+	.contacts__wrapper {
 		position: relative;
-		top: -3px;
-		left: 7.64%;
-		padding: 63px 76px 58px;
-		width: 418px;
+		z-index: 3;
+		top: 97px;
+
+		width: 1300px;
+		padding: 0 40px;
+		margin: 0 auto;
+		
+		background-color: transparent;
 	}
+
+	.contacts__info {
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		width: 570px;
+		padding: 62px 76px 58px;
+		margin: 0;
+
+		background-color: $white;	
+	}
+
 	.contacts__cooperation {
-		width: 40%;
-		padding: 2px 0 0;
+		width: 155px;
+		margin: 0;
 	}
+
 	.contacts__address {
-		width: 40%;
-		padding: 0 0 0;
+		width: 168px;
+		margin: 0;
+
 		text-align: left;
 	}
+	
 	.contacts__map {
-		margin-top: -300px;
+		margin-top: -201px;
+		width: 100%;
+		height: 400px;
 	}
 }

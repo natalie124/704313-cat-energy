@@ -1,0 +1,120 @@
+.filter {
+	width: 100%;
+	padding-bottom: 17px;
+
+	background-color: $white;
+}
+
+.filter__wrapper {
+	min-width: 320px;
+	padding: 0 6.25%;
+}
+
+.filter__title {
+	padding: 16px 0 25px;
+	margin: 0;
+
+	font-family: $oswald;
+	font-size: 36px;
+	line-height: 1.67;
+	font-weight: normal;
+	color: $black;
+}
+
+.filter__text {
+	padding: 0 4% 39px 0;
+	margin: 0;
+
+	font-family: $oswald;
+	font-size: 14px;
+	line-height: 1.29;
+	font-weight: normal;
+	color: $black;
+	text-transform: uppercase;
+}
+
+.filter__btn {
+	width: 87.5%;
+	padding: 10px 0;
+	margin: 13px 6.25% 7px;
+	font-family: $oswald;
+	font-size: 16px;
+	line-height: 1.25;
+	font-weight: normal;
+	color: $white;
+	text-transform: uppercase;
+	background-color: $green;
+}
+.filter__tip {
+	font-family: $arial;
+	font-size: 14px;
+	line-height: 1.14;
+	font-weight: normal;
+	color: $grey;
+	text-transform: none;
+	text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+	.filter {
+		padding-bottom: 70px;
+	}
+	.filter__wrapper {
+		width: 768px;
+		padding: 0 30px;
+		margin: 0 auto;
+	}
+	.filter__title {
+		padding: 33px 0 55px;
+		font-size: 60px;
+		line-height: 1;
+	}
+	.filter__text {
+		width: 60%;
+		padding: 0 0 64px 40px;
+		font-size: 20px;
+		line-height: 1.5;
+	}
+	.filter__btn {
+		width: 283px;
+		padding: 16px 0;
+		margin: 0 40px 0;
+		font-size: 20px;
+		line-height: 1;
+	}
+	.filter__tip {
+		display: inline-block;
+		vertical-align: top;
+		font-size: 16px;
+		line-height: 1;
+		margin-left: 18px;
+		padding-top: 1px;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.filter {
+		margin-bottom: 9px;
+	}
+
+	.filter__wrapper {
+		width: 1300px;
+		padding: 0 40px;
+	}
+
+	.filter__title {
+		padding-top: 18px;
+	}
+
+	.filter__text {
+		width: 387px;
+		padding-left: 0;
+	}
+	
+	.filter__btn {
+		width: 570px;
+		padding-left: 0;
+		margin: 0 64px 0 0;
+	}
+}
+

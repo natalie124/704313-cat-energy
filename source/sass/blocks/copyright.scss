@@ -1,10 +1,15 @@
+
+.copyright {
+	width: 100%;
+}
 .copyright__link {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	width: 89.5%;
-	padding: 18px 4.25% 17px 6.25%;
+	width: 100%;
+	padding: 18px 4% 17px 6%;
+  
 	text-decoration: none;
 	font-family: $arial;
 	font-size: 16px;
@@ -30,15 +35,13 @@
 }
 
 @media (min-width: $tablet-width) {
+	.copyright {
+		width: 173px;
+	}
 
 	.copyright__link {
 		width: 173px;
 		height: 34px;
-		padding: 0 11.5% 0 0;
-	}
-}
-@media (min-width: $desktop-width) {
-	.copyright__link {
-		padding: 3px 37% 0 0;
+		padding: 0;
 	}
 }
