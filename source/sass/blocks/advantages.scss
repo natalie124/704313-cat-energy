@@ -3,6 +3,7 @@
 	padding-left: 7%;
 	background-color: transparent;
 	margin-bottom: 18px;
+}	
   
 .advantages__title {
 	margin: -3px 0 0 0;
@@ -60,10 +61,12 @@
 		background-image: url(../../img/advantage-clock@1x.png);
 	} 
 }
+
 .advantages__text {
 	margin: 0;
 	padding: 0;
 }
+
 @media (min-width: $tablet-width) {
 	.advantages {
 		width: 768px;
@@ -171,7 +174,6 @@
 		
 		&::after {
 			left: 116px;
-
 		}
 	}
-}
+}	
