@@ -28,27 +28,6 @@ body {
 	background-color: $white;
 }
 
-
-@media (min-width: $tablet-width) {
-	body {
-		/*min-width: 768px;*/
-	}
-}
-
-@media (min-width: $desktop-width) {
-	body {
-		/*min-width: 1300px;*/
-		/*max-width: 1440px;*/
-		
-	}
-	.container {
-		/*max-width: 1440px;
-		min-width: 1300px;
-		margin: 0 auto;
-		background-color: blue;*/
-	}
-}
-
 img {
 	max-width: 100%;
 	height: auto;
@@ -78,12 +57,3 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/*.advantages {
-	width: 320px;
-}*/
-/*.example {
-	width: 320px;
-}*/
-/*.page-footer {
-	width: 320px;
-}*/

@@ -94,7 +94,7 @@
 }
 
 @media (min-width: $tablet-width) {
-	
+  
 	.main-nav__toggle {
 		display: none;
 	}
@@ -106,6 +106,7 @@
 	.main-nav__item {
 		padding-left: 37px;
 	}
+  
 	.main-nav__link {
 		display: flex;
 		justify-content: flex-start;

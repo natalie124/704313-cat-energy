@@ -1,3 +1,4 @@
+
 .copyright {
 	width: 100%;
 }
@@ -8,6 +9,7 @@
 	flex-wrap: wrap;
 	width: 100%;
 	padding: 18px 4% 17px 6%;
+  
 	text-decoration: none;
 	font-family: $arial;
 	font-size: 16px;
@@ -40,11 +42,6 @@
 	.copyright__link {
 		width: 173px;
 		height: 34px;
-		padding: 0 0 0 0;
-	}
-}
-@media (min-width: $desktop-width) {
-	.copyright__link {
-		/*padding: 3px 32px 0 0;*/
+		padding: 0;
 	}
 }

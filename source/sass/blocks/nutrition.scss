@@ -130,6 +130,7 @@
 		padding: 0 30px;
 		margin: 0 auto;
 	}
+  
 	.nutrition__item {
 		width: 100%;
 		padding: 76px 280px 62px 52px;
@@ -146,6 +147,7 @@
 			top: 16px;
 			left: 105%;
 		}
+    
 		&::after {
 			width: 268px;
 			height: 194px;
@@ -197,6 +199,7 @@
 		&::before {
 			top: 46px;
 			left: -1px;
+      
 			width: 100px;
 			height: 100px;
 		}
@@ -204,6 +207,7 @@
 		&::after {
 			top: 41px;
 			left: -19px;
+      
 			width: 134px;
 			height: 97px;
 		}
@@ -224,7 +228,7 @@
 		padding-bottom: 63px;
 
 		&::after {
-			left: 128	px;
+			left: 128px;
 			top: 4px;
 		}
 	}

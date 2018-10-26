@@ -1,7 +1,6 @@
 .page-footer {
 	background-color: $lightgrey;
 	width: 100%;
-	
 }
 .page-footer__sidebar {
 	width: 100%;
@@ -51,6 +50,7 @@
 }
 
 @media (min-width: $desktop-width) {
+
 	.page-footer__sidebar {
 		width: 1300px;
 		min-height: 150px;
