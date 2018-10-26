@@ -13,3 +13,43 @@
 	color: $black;
 	border-bottom: 1px solid #ededed;
 }
+
+.catalog__list {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+	.catalog {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 768px;
+		padding: 0 30px;
+		margin: 0 auto;
+	}
+	.catalog__title {
+		padding: 32px 0 23px;
+		font-size: 60px;
+		line-height: 1;
+		border: none;
+	}
+	.catalog__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.catalog {
+		width: 1300px;
+		padding: 0 40px;
+	}
+	.catalog__title {
+		padding-top: 18px;
+	}
+}
