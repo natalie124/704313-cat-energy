@@ -44,7 +44,18 @@
 	color: $white;
 	text-transform: uppercase;
 	background-color: $green;
+
+		&:hover,
+		&:focus {
+			background-color: #5eaa2f;
+		}
+
+		&:active {
+			color: rgba(255, 255, 255, 0.3);
+			background-color: #5eaa2f;
+		}
 }
+
 .filter__tip {
 	font-family: $arial;
 	font-size: 14px;

@@ -57,6 +57,11 @@
 	display: block;
 }
 
+.checkbox-list__btn:disabled ~ .checkbox-list__field-title::before,
+.checkbox-list__btn:disabled ~ .checkbox-list__field-title {
+	opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
 	.checkbox-list {
 		display: flex;

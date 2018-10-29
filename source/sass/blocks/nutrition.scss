@@ -27,6 +27,7 @@
 	font-family: $oswald;
 	font-size: 24px;
 	line-height: 1.54;
+	font-weight: normal;
 	color: $black;
 	text-transform: uppercase;
 
@@ -53,14 +54,14 @@
 	}
 
 	&--weight-down::after {
-		background-image: url(../../img/icon-cat-slim.svg);
+		background-image: url(../img/icon-cat-slim.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 35px 49px;
 	}
 
 	&--weight-up::after {
-		background-image: url(../../img/icon-cat-pro.svg);
+		background-image: url(../img/icon-cat-pro.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 67px 28px;
@@ -99,7 +100,7 @@
 		top: 20px;
 		width: 25px;
 		height: 12px;
-		background-image: url(../../img/icon-right-arrow-long.svg);
+		background-image: url(../img/icon-right-arrow-long.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 	}
@@ -107,7 +108,7 @@
 	&:hover::after,
 	&:focus::after {
 		width: 30px;
-		background-image: url(../../img/icon-right-arrow-verylong.svg);
+		background-image: url(../img/icon-right-arrow-verylong.svg);
 	}
 
 	&:active {
@@ -117,7 +118,7 @@
 	&:active::after {
 		right: 35.3125%;
 		width: 30px;
-		background-image: url(../../img/icon-right-arrow-verylong.svg);
+		background-image: url(../img/icon-right-arrow-verylong.svg);
 		opacity: 0.3;
 	}
 }

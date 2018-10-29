@@ -44,6 +44,10 @@
 .radio-list__btn:checked ~ .filter-form__field-title::before {
 	background-color: $green;
 }
+.radio-list__btn:disabled ~ .filter-form__field-title::before,
+.radio-list__btn:disabled ~ .filter-form__field-title {
+	opacity: 0.3;
+}
 
 @media (min-width: $tablet-width) {
 	.radio-list {

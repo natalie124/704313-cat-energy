@@ -97,11 +97,11 @@
 	outline: 0;
 }
 
-/*.filter-form__field:invalid {
+.filter-form__field:required:invalid {
 	border-color: #ff8282;
 	box-shadow: 0 0 0 1px #ff8282;
 	outline: 0
-}*/
+}
 
 @media (min-width: $tablet-width) {
 	.filter-form  {
