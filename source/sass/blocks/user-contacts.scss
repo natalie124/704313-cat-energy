@@ -33,14 +33,14 @@
 	fill: $green;
 	outline: 0;
 }
-/*.filter-form__field:required:invalid {
+.filter-form__field:required:invalid {
 	box-shadow: -1px 0 0 0 #ff8282, 0 1px 0 0 #ff8282, 0 -1px 0 0 #ff8282;
 }
 .filter-form__field:required:invalid ~ .user-contacts__btn {
 	border-color: #ff8282;
 	box-shadow: 1px 0 0 0 #ff8282, 0 1px 0 0 #ff8282, 0 -1px 0 0 #ff8282;
 	fill: #ff8282;
-}*/
+}
 
 @media (min-width: $tablet-width) {
 
