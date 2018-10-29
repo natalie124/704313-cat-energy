@@ -4,7 +4,7 @@
 	min-height: 289px;
 
 	background-color: $green;
-	background-image: url(../../img/gift-photo-mobile@1x.jpg);
+	background-image: url(../img/gift-photo-mobile@1x.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
@@ -36,7 +36,7 @@
 		height: 61px;
 		
 		background-color: transparent;
-		background-image: url(../../img/icon-gift.svg);
+		background-image: url(../img/icon-gift.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 
@@ -73,13 +73,14 @@
 		width: 245px;
 		min-height: 289px;
 		margin: 0;
-		background-image: url(../../img/gift-photo-desktop@1x.jpg);
+		background-image: url(../img/gift-photo-desktop@1x.jpg);
 	}
 	.bonus__title {
 		padding: 122px 30px 0;
 		text-align: center;
 		margin: 18px 0 0;
 		&::before {
-			left: calc(50% - 28px);		}
+			left: calc(50% - 28px);		
+		}
 	}
 }
