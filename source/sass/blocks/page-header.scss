@@ -7,7 +7,8 @@
 .page-header__logo {
 	display: flex;
 	align-items: center;
-	height: 65px;
+	height: 66px;
+	padding-top: 4px;
 
 	border-bottom: 2px solid #e6e6e6;
 }
@@ -15,7 +16,7 @@
 .page-header__logo-image {
 	width: 191px;
 	height: 38px;
-	margin-left: 6%;	
+	margin-left: 10%;	
 }
 
 .page-header__logo-image:hover,
@@ -34,20 +35,20 @@
 		justify-content: space-between;
 		align-items: flex-start;
 		width: 786px;
-		padding: 24px 46px;
-		margin: 0 auto;
+		padding: 0 30px 20px;
+		margin: 22px auto 0;
 	}
 
 	.page-header__logo {
-		width: 174px;
-		height: 60px;
+		padding: 0;
 		
 		border-bottom: none;
 	}
 
-	.page-header__Logo-image {
+	.page-header__logo-image {
 		width: 174px;
-		height: 59px;
+		height: 57px;
+		margin-left: 0;
 	}
 }
 
@@ -73,7 +74,12 @@
 			background-repeat: no-repeat;
 			background-position: right bottom;
 			background-size: 720px auto;
+
+			@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+		      background-image: url("../img/index-background-desktop@2x.jpg");
+		    }
 		}
+		
 		&--index {
 			min-height: 696px;
 			margin-bottom: 81px;
@@ -83,13 +89,14 @@
 	.page-header__wrapper {
 		width: 1300px;
 		padding: 0 40px;
+		margin-bottom: 8px;
 	}
 
 	.page-header__logo {	
-		padding: 85px 0;
+		padding: 62px 0;
 	}
 
-	.page-header__image {
+	.page-header__logo-image {
 		width: 203px;
 		height: 60px;
 	}
