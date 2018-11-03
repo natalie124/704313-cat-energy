@@ -146,12 +146,16 @@
           <ul class="slider__image-list">
             <li class="slider__image-item slider__image-item--before">
                <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
                 <img class="slider__image slider__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Красивый пухлый кот">
               </picture>
             </li>
              <li class="slider__image-item slider__image-item--after">
                <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
                 <img class="slider__image slider__image--after" src="img/after-mobile@1x.png" srcset="img/after-tablet@2x.png 2x" alt="Изящный кот">
               </picture>  
@@ -184,6 +188,9 @@
         </div> 
         <div class="contacts__map">
           <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp, img/bg-map-mobile@2x.webp 2x">
             <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
             <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Местоположение магазина на карте">
@@ -198,7 +205,7 @@
         <ul class="page-footer__social-list social-list">
           <li class="social-list__item">
             <a href="https://vk.com/intensive_adaptive_15" class="social-list__link">
-              <svg class="social-list__icon social-list__icon--vk" width="22" height="12"><use xLink:href="#icon-vk"></use></svg>
+              <svg class="social-list__icon social-list__icon--vk" width="22" height="12"><use xLink:href="img/sprite.svg#icon-vk"></use></svg>
             </a>
           </li>
           <li class="social-list__item">
