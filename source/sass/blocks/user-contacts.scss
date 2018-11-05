@@ -1,67 +1,73 @@
 .user-contacts {
-	margin-bottom: 14px;	
+  margin-bottom: 14px;
 }
 
 .user-contacts__title {
-	margin-right: 9px;
+  margin-right: 9px;
 }
+
 .user-contacts__field {
-	border-right: none;
+  border-right: none;
 }
 
 .user-contacts__btn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 45px;
-	height: 45px;
-	border: 1px solid #e6e6e6;
-	border-left: none;
-	background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+
+  background-color: transparent;
+
+  border: 1px solid #e6e6e6;
+  border-left: none;
 }
 
 .user-contacts__field:hover ~ .user-contacts__btn {
-	border-color: #cdcdcd;
+  border-color: #cdcdcd;
 }
 
 .user-contacts__field:focus {
-	box-shadow: -1px 0 0 0 $grey, 0 1px 0 0 $grey, 0 -1px 0 0 $grey;
+  box-shadow: -1px 0 0 0 $grey, 0 1px 0 0 $grey, 0 -1px 0 0 $grey;
 }
+
 .user-contacts__field:focus ~ .user-contacts__btn {
-	border-color: $grey;
-	box-shadow: 1px 0 0 0 $grey, 0 1px 0 0 $grey, 0 -1px 0 0 $grey;
-	fill: $green;
-	outline: 0;
+  fill: $green;
+
+  border-color: $grey;
+  box-shadow: 1px 0 0 0 $grey, 0 1px 0 0 $grey, 0 -1px 0 0 $grey;
+  outline: 0;
 }
+
 .filter-form__field:required:invalid {
-	box-shadow: -1px 0 0 0 #ff8282, 0 1px 0 0 #ff8282, 0 -1px 0 0 #ff8282;
+  box-shadow: -1px 0 0 0 #ff8282, 0 1px 0 0 #ff8282, 0 -1px 0 0 #ff8282;
 }
+
 .filter-form__field:required:invalid ~ .user-contacts__btn {
-	border-color: #ff8282;
-	box-shadow: 1px 0 0 0 #ff8282, 0 1px 0 0 #ff8282, 0 -1px 0 0 #ff8282;
-	fill: #ff8282;
+  fill: #ff8282;
+
+  border-color: #ff8282;
+  box-shadow: 1px 0 0 0 #ff8282, 0 1px 0 0 #ff8282, 0 -1px 0 0 #ff8282;
 }
 
 @media (min-width: $tablet-width) {
+  .user-contacts__title {
+    margin-right: 20px;
+  }
 
-	.user-contacts__title {
-		margin-right: 20px;
-	}
+  .user-contacts__btn {
+    height: 52px;
+    width: 52px;
+  }
 
-	.user-contacts__btn {
-		height: 52px;
-		width: 52px;
-	}
-	.user-contacts__field {
-		border-right: none;
-	}
+  .user-contacts__field {
+    border-right: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
-	.user-contacts {
-		padding-top: 3px;
-		margin-bottom: 0;
-	}
+  .user-contacts {
+    padding-top: 3px;
+    margin-bottom: 0;
+  }
 }
-	
-
