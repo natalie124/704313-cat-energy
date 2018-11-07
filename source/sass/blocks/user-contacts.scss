@@ -2,6 +2,10 @@
   margin-bottom: 14px;
 }
 
+.user-contacts__container {
+  flex-wrap: nowrap;
+}
+
 .user-contacts__title {
   margin-right: 9px;
 }
@@ -39,11 +43,11 @@
   outline: 0;
 }
 
-.filter-form__field:required:invalid {
+.user-contacts__field:required:invalid {
   box-shadow: -1px 0 0 0 #ff8282, 0 1px 0 0 #ff8282, 0 -1px 0 0 #ff8282;
 }
 
-.filter-form__field:required:invalid ~ .user-contacts__btn {
+.user-contacts__field:required:invalid ~ .user-contacts__btn {
   fill: #ff8282;
 
   border-color: #ff8282;

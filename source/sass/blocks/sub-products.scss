@@ -121,9 +121,15 @@
 
   .sub-products__container {
     padding-left: 0;
+    padding-top: 60px;
 
     &::before {
+      top: 82px;
       right: calc(100% + 40px);
+    }
+
+    &::after {
+      top: 82px;
     }
   }
 
