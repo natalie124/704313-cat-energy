@@ -49,7 +49,6 @@
 
 .filter-form__cat-info {
   width: 100%;
-  padding: 0 6.25%;
 }
 
 .filter-form__field-container {
@@ -58,7 +57,7 @@
   align-items: flex-start;
   flex-wrap: wrap;
   width: 100%;
-  padding: 0 0;
+  padding: 0 6.25%;
 }
 
 .filter-form__field-title {
@@ -125,6 +124,10 @@
     width: 768px;
     padding: 0 30px;
     margin: 0 auto;
+  }
+
+  .filter-form__cat-info {
+    width: auto;
   }
 
   .filter-form__field-container {
@@ -214,7 +217,7 @@
       content: "";
 
       position: absolute;
-      top: 23px;
+      top: 22px;
       left: 100%;
 
       width: 100vw;
