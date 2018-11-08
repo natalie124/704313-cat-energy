@@ -115,6 +115,8 @@
   border: none;
   border-radius: 6px;
   background-color: $green;
+
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
